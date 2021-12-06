@@ -1,29 +1,21 @@
-input[type=range]{
-    -webkit-appearance: none;
+body{
+    text-align: center;
 }
-
-input[type=range]::-webkit-slider-runnable-track {
-    width: 300px;
-    height: 5px;
-    background: #ddd;
-    border: none;
-    border-radius: 3px;
+.controls{
+    margin-bottom: 2rem;
 }
-
-input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    border: none;
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    background: goldenrod;
-    margin-top: -4px;
+:root{
+    --base: #60A5FA;
+    --spacing: 10px;
+    --blur: 10px;
 }
-
-input[type=range]:focus {
-    outline: none;
+img{
+    width: 30rem;
+    /* height: 30rem; */
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
 }
-
-input[type=range]:focus::-webkit-slider-runnable-track {
-    background: #ccc;
+.hl{
+    color: var(--base);
 }
